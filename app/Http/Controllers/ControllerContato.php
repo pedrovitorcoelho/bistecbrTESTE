@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
-use app\Mail\ContatoEmail;
+use App\Mail\ContatoEmail;
 
 class ControllerContato extends Controller
 {
