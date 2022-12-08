@@ -43,3 +43,10 @@
         font-size: 4vh;
     }
 }
+@media (prefers-color-scheme: dark){
+    @media (min-width: 769px) and (max-width: 1024px){
+        .header-bistec {
+            padding: 4px 0;
+        }
+    }
+}
