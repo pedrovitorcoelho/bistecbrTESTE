@@ -117,7 +117,7 @@
             
             <div class="contact item2">
                 <p>
-                    <img src="https://ik.imagekit.io/bistecbr/clock.png" alt="Logo Horário"> Funcionamento 
+                    <img src="https://ik.imagekit.io/bistecbr/clock.png" alt="Logo Horário" height="15" width="15"> Funcionamento 
                 </p> 
                 <p>Segunda à Sexta:</p> 
                 <p>08:15h - 18:00h</p>
@@ -143,7 +143,7 @@
     <div class="footer-copyright">
         <p>©2022 Bistec · Consultoria de TI · Todos os direitos reservados.</p>
     </div>
-    <script src="/js/main.js" defer async></script>
+    @yield('script')
     <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
     <script src="//code.jivosite.com/widget/3bZuUHkWaM" async></script>
 </body>

@@ -110,3 +110,7 @@
         </section>
     </article>
 @stop
+
+@section('script')
+    <script src="/js/main.js" defer async></script>
+@stop

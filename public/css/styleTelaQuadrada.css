@@ -1,9 +1,4 @@
 @media (min-width: 1025px) and (max-width: 1219px){
-    
-    .header-bistec {
-        padding: 15px 100px;
-    }
-
     .container {
         max-width: 58%;
     }
@@ -24,7 +19,7 @@
 
 @media (min-width: 769px) and (max-width: 1024px){
     .header-bistec {
-        padding: 2px 100px;
+        padding: 0 30px;
     }
 
     .container {
@@ -37,6 +32,10 @@
 
     .redes-sociais {
         max-width: 80%;
+    }
+
+    .bistec-suporte h1 {
+        padding-top: 8vh;
     }
 
     footer ion-icon {

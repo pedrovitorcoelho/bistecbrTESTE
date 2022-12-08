@@ -8,7 +8,7 @@
 
 .bistec-suporte h1 {
     font-size: 4vw;
-    padding-top: 8vh;
+    padding-top: 12vh;
     background-color: transparent;
 }
 
@@ -16,6 +16,7 @@
     font-size: 2vw;
     padding: 1.75vh 0;
     background-color: transparent;
+    margin: 1vh;
 }
 
 .bistec-suporte .button_text {
@@ -29,7 +30,7 @@
 .bt-dialog-anydesk {    
 	background-color: #A62923;
     align-items: center;
-    padding: 2vw 2vw;
+    padding: 1.2vw;
     color: #fff;
     border-radius: 6px;
     cursor: pointer;
@@ -39,25 +40,30 @@
     max-width: 40%;
 }
 
-.bt-dialog-anydesk:hover {
+.bistec-suporte p:last-child {
+    margin-top: 4vh;
+}
+
+.bt-dialog-anydesk:hover,
+.bt-dialog-anydesk:focus-within {
 	background-color: #9b1d16;
 }
 
 .bt-dialog-teamviewer {    
 	background-color: #0859A1;
     align-items: center;
-    padding: 2vw 2vw;
+    padding: 1.2vw;
     color: #fff;
     border-radius: 6px;
     cursor: pointer;
 	border: none;
 	outline: none;
     font-weight: 700;
-    margin-bottom: 1vw;
     max-width: 40%;
 }
 
-.bt-dialog-teamviewer:hover {
+.bt-dialog-teamviewer:hover,
+.bt-dialog-teamviewer:focus-within {
 	background-color: #095191;
 }
 
@@ -73,98 +79,11 @@
     background-color: transparent;
 }
 
-/*whatsapp suporte*/
+@media (min-width: 335px) and (max-width: 620px) {
 
-.suporte_icons ion-icon{
-    color: #14b22c;
-    font-size: 5vh;
-    border-radius: 100%;
-    padding-top: 0.3em;
-    padding-left: 0.5em;
-}
-
-/* .suporte_icons ion-icon:hover {
-    cursor: pointer;
-    background-color: #14b22c;
-    border: #14b22c solid 2px;
-    color: #ffffff;
-    transition: 0.7s;
-} */
-
-.suporte_icons {
-    display: flex;
-    background-color: #f3fafa;
-    border-radius: 30em;
-    box-shadow: 0 5px 25px rgba(0,0,0,.1);
-    max-width: 55%;
-    border: #14b22c solid 2px;
-    cursor: pointer;
-}
-
-.icon_wpp_support {
-    margin: 0;
-}
-
-.suporte_icons:hover {
-    background-color: #14b22c;
-    color: #fff;
-    transition: 0.8s;
-}
-
-.suporte_icons h5, .suporte_icons2 h5 {
-    font-size: 1.2em;
-    font-weight: 800;
-    line-height: 2.9em;
-    margin: 0;
-    margin-left: 0.7em;
-}
-
-.suporte_icons:hover > a ion-icon {
-    color: #fff;
-    transition: 0.8s;
-}
-
-ion-icon:hover {
-    color: #ffffff;
-}
-
-/*telegram suporte*/
-
-.suporte_icons2 {
-    display: flex;
-    background-color: #f3fafa;
-    border-radius: 30em;
-    box-shadow: 0 5px 25px rgba(0,0,0,.1);
-    max-width: 55%;
-    border: #1d93d2 solid 2px;
-    cursor: pointer;
-    margin-top: 2em;
-}
-
-.suporte_icons2 ion-icon{
-    color: #1d93d2;
-    font-size: 5vh;
-    border-radius: 100%;
-    padding-top: 0.3em;
-    padding-left: 0.5em;
-}
-
-.icon_telegram_support {
-    margin: 0;
-}
-
-.suporte_icons2:hover {
-    background-color: #1d93d2;
-    color: #fff;
-    transition: 0.8s;
-}
-
-.suporte_icons2:hover > a ion-icon {
-    color: #fff;
-    transition: 0.8s;
-}
-
-@media (max-width: 620px) {
+    .bistec-suporte {
+        max-width: 100%;
+    }
 
     .bistec-suporte h1 {
         font-size: 7vw;
@@ -173,7 +92,12 @@ ion-icon:hover {
 
     .bistec-suporte p {
         font-size: 4.8vw;
-        padding: 1.75vh 0;
+        padding: 1vh 0;
+    }
+
+    .bt-dialog-anydesk, .bt-dialog-teamviewer {
+        padding: 2vw;
+        max-width: 65%;
     }
 
     footer {
@@ -184,26 +108,69 @@ ion-icon:hover {
         margin: 0.3em auto;
     }
 
-    .bt-dialog-teamviewer {
-        max-width: 60%;
-    }
-    .bt-dialog-anydesk {
-        max-width: 60%;
-    }
-
     .suporte_icons ion-icon, .suporte_icons2 ion-icon {
-        padding-top: 0.1em;
+        padding-top: 0.2em;
         padding-left: 0.3em;
     }
 
     .suporte_icons, .suporte_icons2 {
-        max-width: 100%;
+        max-width: 85%;
+        justify-content: space-evenly;
     }
 
     .suporte_icons h5, .suporte_icons2 h5{
         font-size: 0.9em;
         margin: 0;
-        margin-left: 0.5em;
+        margin-right: 0.5em;
     }
 
+}
+
+@media (max-width: 334px) {
+    .bistec-suporte {
+        max-width: 100%;
+    }
+
+    .bistec-suporte h1 {
+        font-size: 7vw;
+        padding-top: 10vh;
+    }
+
+    .bistec-suporte p {
+        font-size: 4.8vw;
+        padding: 1.25vh 0;
+    }
+
+    .bt-dialog-anydesk, .bt-dialog-teamviewer {
+        padding: 2vw;
+        max-width: 65%;
+    }
+
+    footer {
+        margin-top: 0;
+    }
+
+    footer ion-icon {
+        margin: 0.3em auto;
+    }
+
+    .suporte_icons ion-icon, .suporte_icons2 ion-icon {
+        padding-top: 0.2em;
+        padding-left: 0.3em;
+    }
+
+    .suporte_icons, .suporte_icons2 {
+        max-width: 85%;
+        justify-content: space-evenly;
+    }
+
+    .suporte_icons h5, .suporte_icons2 h5{
+        font-size: 0.9em;
+        margin: 0;
+        margin-right: 0.5em;
+    }
+
+    .suporte_icons, .suporte_icons2 {
+        max-width: 95%;
+    }
 }

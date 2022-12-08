@@ -22,11 +22,11 @@ const verificaTela = () => {
     } 
 
     //RECOMPOE MENU AO ALTERAR TAMANHO DA TELA ENTRE MOBILE E OUTRO
-    let menu = document.getElementsByClassName('normal-menu')[0]
-    if(!window.matchMedia("(min-width: 951px)").matches)
-        menu.style.display = 'none'
-    else
-        menu.style.display = 'inherit'
+    // let menu = document.getElementsByClassName('normal-menu')[0]
+    // if(!window.matchMedia("(min-width: 951px)").matches)
+    //     menu.style.display = 'none'
+    // else
+    //     menu.style.display = 'inherit'
 }
 window.onresize = verificaTela
 window.onload = verificaTela
