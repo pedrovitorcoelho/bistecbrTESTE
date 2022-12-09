@@ -79,7 +79,7 @@ p .nice_button {
     font-size: 1em;
 }
 
-.nice_button:hover {
+.nice_button:hover, .nice_button:focus-within {
     background-color: #141414;
     color: white;
     transition: 0.8s;

@@ -1,4 +1,4 @@
-@extends('template')
+@extends('layouts.template')
 
 @section('style')
     <link rel="stylesheet" href="/css/styleProdutos.css">
@@ -10,7 +10,7 @@
 <article id="first_section">
         <!-- banner -->
         <section class="banner-bistec">
-            <img src="https://ik.imagekit.io/bistecpt/imagens/produtos/bistec-outsourcing-intro.jpg" alt="Imagem de fundo do produto Bistec Edu">
+            <img src="https://ik.imagekit.io/bistecbr/produtos/bistec-outsourcing-intro.jpg" alt="Imagem de fundo do produto Bistec Edu">
             <!--<div class="banner-bistec-texto">
                 <h1>Bistec Portugal</h1>
                 <h2>Serviços em tecnologia para todas as empresas</h2>
@@ -21,14 +21,23 @@
     <div class="produto-texto">
         <h1>Bistec Outsourcing</h1>
         <p>
-            A Bistec, consolidada no mercado de tecnologia para o comércio e serviços, oferece o kit completo para montar o seu PDV e automatizar suas vendas.
-        </p>
-        <p>
-            Facilite a sua gestão e as transações com os seus clientes e esteja em dia com a legislação fiscal. Os kits podem conter terminais de venda (teclados inteligentes), leitores de código de barras, relógios de pontos digitais, computadores, etc. Temos também softwares para a automação comercial da sua empresa.
+            Conte com consultores técnicos e economize o tempo e o dinheiro da sua empresa.
         </p>
 
         <p>
-            Elimine falhas de controle operacional com os relógios de pontos digitais. Com o modelo móvel o controle de ponto dos funcionários pode ser realizado onde eles estiverem.
+            Canais de Atendimento (chat online, redes sociais, aplicativos de mensagens, ligações e acesso remoto)
+        </p>
+
+        <p>
+            Visitas (Atendimento presencial para prevenir ou corrigir problemas técnicos)
+        </p>
+
+        <p>
+            Contratos (Atendimento presencial em até 24 horas ou conforme o acordo de nível de serviço contratado)
+        </p>
+
+        <p>
+            Ainda restam dúvidas sobre qual solução adquirir? <a class="link_msp" target="_blank" href="https://api.whatsapp.com/send?phone=5513992101945">Converse com um de nossos atendentes sobre a solução BISTEC Outsourcing</a>
         </p>
     </div>
     </article>

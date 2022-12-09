@@ -9,16 +9,16 @@ article {
 }
 
 .formulario {
-    border-radius: 0.3em;
-    background: linear-gradient(135deg, #f3fafa, #fff);
+    border-radius: 0.8em;
+    background: linear-gradient(135deg, #f3fafa, #e3e7e7);
     color: #000;
     margin: 2.5em 0;
     border: 4px solid #A0C8F9;
 }
 
 .formulario2 {
-    border-radius: 0.3em;
-    background: linear-gradient(135deg, #f3fafa, #fff);
+    border-radius: 0.8em;
+    background: linear-gradient(135deg, #f3fafa, #e3e7e7);
     color: #000;
     margin: 2.5em 0;
     border: 4px solid #A0C8F9;
@@ -26,6 +26,18 @@ article {
 
 .campos {
     padding: 1% 2%;
+    text-align: left;
+}
+
+.campos h1 {
+    margin-bottom: 0.5em;
+}
+
+.campos h1, .campos p {
+    text-align: center;
+}
+
+#formContato h1, .newsletter_address_talktous h1 {
     text-align: left;
 }
 

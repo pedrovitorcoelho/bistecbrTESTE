@@ -149,8 +149,11 @@ Route::get('/produtos/wifi', function () {
 
 Route::get('/produtos/xml', function () {
     return view('produtos/xml');
+<<<<<<< HEAD
 });
 
 Route::get('/produtos/hostfiber', function () {
     return view('produtos/hostfiber');
+=======
+>>>>>>> origin/gui-laravel1
 });

@@ -1,0 +1,53 @@
+/* body {
+    background: linear-gradient(35deg, #f3fafa, #d1e5ff);
+} */
+
+article h1 {
+    margin-top: 2.5em;
+    text-align: center;
+    font-size: 2em;
+}
+
+.bistec_pag_portfolio {
+    max-width: 85%;
+    color: #141414;
+    margin: auto;
+    text-align: center;
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr); */
+}
+
+.bistec_pag_portfolio img {
+    height: 16em;
+    border-radius: 0.4em;
+    margin: 0.8em;
+    box-shadow: 0 5px 25px rgba(0,0,0,.2);
+}
+
+@media (max-width: 620px) {
+    article h1 {
+        margin-top: 3.5em;
+        margin-bottom: 0.5em;
+        text-align: center;
+        font-size: 1.6em;
+    }
+
+    .bistec_pag_portfolio img {
+        height: auto;
+        max-width: 90%;
+        box-shadow: 0 5px 15px rgba(183, 183, 183, 0.1);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #141414;
+    }
+
+    @media (max-width: 620px) {
+        article h1 {
+            color: #fff;
+        }
+    }
+}
+
