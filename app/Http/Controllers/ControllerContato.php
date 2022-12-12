@@ -13,7 +13,7 @@ class ControllerContato extends Controller
         Mail::to($request->email)
          ->bcc('testebistec@gmail.com')
          ->send(new ContatoEmail($request));
-        return redirect('/contato')->with('mensagem','Contato enviado com sucesso!');
+        return redirect('/emailSucesso')->with('mensagem','Contato enviado com sucesso!');
     }
 }
 

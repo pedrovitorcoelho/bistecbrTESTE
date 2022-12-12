@@ -18,8 +18,12 @@
            @if(session('mensagem'))
             <div>
               <p>{{session('mensagem')}}</p> 
-            </div>
-           @endif   
+            </div>        
+
+           @endif 
+             
+             
+             
 
 
             <form name="frmContato" method="POST" id="frmContato" method="POST" action="{{url('enviaContato')}}" >
@@ -28,6 +32,11 @@
                     <h1>Formulário para Contato</h1>
                     <label>Nome completo:</label><br>
                     <input type="text" name="nomeRemetente" placeholder="Digite seu nome aqui" required>
+                </div>
+
+                <div class="campos">
+                    <label>Telefone-celular:</label><br>
+                    <input type="tel" name="telefoneRemetente" placeholder="(XX) XXXXX-XXXX" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" required>
                 </div>
                 
                 <div class="campos">
@@ -39,7 +48,8 @@
                     <label>Assunto do e-mail:</label><br>
                     <input type="text" name="assuntoEmail" placeholder="Digite aqui sobre o que seu e-mail se trata" required>
                 </div>
-                
+
+
                 <div class="campos">
                     <label> Seu comentário: </label><br>
                     <textarea name="conteudoEmail" placeholder="Deixe seu comentário" required></textarea>

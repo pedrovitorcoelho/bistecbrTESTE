@@ -79,6 +79,11 @@ Route::get('/contato', function () {
     return view('contato');
 });
 
+
+Route::get('/emailSucesso', function () {
+    return view('emailSucesso');
+});
+
 Route::post('/enviaContato','App\Http\Controllers\ControllerContato@enviaMsg');
 
 Route::post('/email', function (Request $request) {
