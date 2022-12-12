@@ -51,7 +51,7 @@
                 
     
                 <div class="campos">
-                    <input type="submit" name="enviarEmail" value="Enviar" id="btEnviaForm">
+                    <input type="submit" name="enviarEmail" value="Enviar" id="btEnviaForm1">
                 </div>
                 
             </form>
@@ -83,10 +83,14 @@
                         <h1>Newsletter</h1>
                         <label>Digite seu email para receber novidades:</label>
                         <input type="email" name="emailRemetente" placeholder="Digite seu endereço de e-mail aqui" required>
-                        <input type="submit" name="enviarNewsletter" value="Enviar" id="btEnviaForm">
+                        <input type="submit" name="enviarNewsletter" value="Enviar" id="btEnviaForm2">
                     </div>  
                 </form>
             </div>
         </div>
     </article>
+@stop
+
+@section('script')
+    <script src="/js/menu.js" defer async></script>
 @stop

@@ -6,6 +6,10 @@
         display: block;
         padding: 10px 0;
     }
+    
+    .logo-bistec img {
+        margin-left: 20px;
+    }
 
     header .normal-menu li a{
         font-size: 16px;
@@ -154,10 +158,6 @@
     }
 
     /* rodapé */
-
-    footer {
-        margin-top: 4vh;
-    }
 
     .redes-sociais {
         max-width: 85%;

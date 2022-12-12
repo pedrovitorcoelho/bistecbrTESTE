@@ -1,9 +1,4 @@
 @media (min-width: 1025px) and (max-width: 1219px){
-    
-    .header-bistec {
-        padding: 15px 100px;
-    }
-
     .container {
         max-width: 58%;
     }
@@ -24,7 +19,7 @@
 
 @media (min-width: 769px) and (max-width: 1024px){
     .header-bistec {
-        padding: 2px 100px;
+        padding: 2px 30px;
     }
 
     .container {
@@ -39,8 +34,19 @@
         max-width: 80%;
     }
 
+    .bistec-suporte h1 {
+        padding-top: 8vh;
+    }
+
     footer ion-icon {
         padding: 8px;
         font-size: 4vh;
+    }
+}
+@media (prefers-color-scheme: dark){
+    @media (min-width: 769px) and (max-width: 1024px){
+        .header-bistec {
+            padding: 4px 0;
+        }
     }
 }

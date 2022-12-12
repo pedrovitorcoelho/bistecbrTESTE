@@ -65,3 +65,7 @@
     </div>
     </article>
 @stop
+
+@section('script')
+    <script src="/js/menu.js" defer async></script>
+@stop

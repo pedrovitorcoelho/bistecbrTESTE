@@ -106,7 +106,11 @@
         </section>
 
         <section class="bistec_tour">
-            <a href="/tour" class="bistec_button_tour">Visite a Bistec pelo seu navegador em um tour virtual.</a>
+            <a href="/tour" class="bistec_button_tour">Visite a sede da Bistec pelo seu navegador em um tour virtual.</a>
         </section>
     </article>
+@stop
+
+@section('script')
+    <script src="/js/main.js" defer async></script>
 @stop

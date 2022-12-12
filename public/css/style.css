@@ -23,7 +23,6 @@ header {
     width: 100%;
     display: flex;
     position: fixed;
-    padding: 15px 100px;
     display: flex;
     z-index: 2;
 }
@@ -31,7 +30,6 @@ header {
 .logo-bistec img {
     width: 16vw;
     height: auto;
-    margin-bottom: 1vh;
     aspect-ratio: attr(width) / attr(height);
 }
 /* trocando imagens logo - dark mode*/
