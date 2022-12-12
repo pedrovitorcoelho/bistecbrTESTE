@@ -1,4 +1,4 @@
-@extends('layouts.template')
+@extends('template')
 
 @section('style')
     <link rel="stylesheet" href="/css/styleContato.css">
@@ -6,9 +6,24 @@
 
 @section('corpo')
 <!-- CORPO -->
+
+@if(session('mensagem'))
+ <div>
+    <p>{{session('mensagem')}}</p>
+ </div>
+@endif
+
 <article id="first_section" class="article_contact">
         <div class="formulario2">
-            <form action="email/" method="POST" id="formContato">
+           @if(session('mensagem'))
+            <div>
+              <p>{{session('mensagem')}}</p> 
+            </div>
+           @endif   
+
+
+            <form name="frmContato" method="POST" id="frmContato" method="POST" action="{{url('enviaContato')}}" >
+                {{ csrf_field() }}
                 <div class="campos">
                     <h1>Formulário para Contato</h1>
                     <label>Nome completo:</label><br>
@@ -32,7 +47,7 @@
                 
     
                 <div class="campos">
-                    <input type="submit" name="enviarEmail" value="Enviar" id="btEnviaForm1">
+                    <input type="submit" name="enviarEmail" value="Enviar" id="btEnviaForm">
                 </div>
                 
             </form>
@@ -43,7 +58,8 @@
                 <div class="campos">
                             <h1>Endereço</h1>
                             <p>Rua Amador Bueno, 333, Sala 501 - Centro – Santos, SP</p>
-                            <p>CEP 11013-153 - <em>Estacionamento no local com acesso à recepção</em></p>
+                            <p>CEP 11013-153</p>
+                            <p><em>Estacionamento no local com acesso à recepção</em></p>
                 </div> 
             </div>
         </div>
@@ -64,7 +80,7 @@
                         <h1>Newsletter</h1>
                         <label>Digite seu email para receber novidades:</label>
                         <input type="email" name="emailRemetente" placeholder="Digite seu endereço de e-mail aqui" required>
-                        <input type="submit" name="enviarNewsletter" value="Enviar" id="btEnviaForm2">
+                        <input type="submit" name="enviarNewsletter" value="Enviar" id="btEnviaForm">
                     </div>  
                 </form>
             </div>
