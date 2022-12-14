@@ -36,7 +36,7 @@
 
                 <div class="campos">
                     <label>Telefone-celular:</label><br>
-                    <input type="tel" name="telefoneRemetente" placeholder="(XX) XXXXX-XXXX" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" required>
+                    <input type="tel" name="telefoneRemetente" placeholder="(XX) XXXXX-XXXX"  required>
                 </div>
                 
                 <div class="campos">
@@ -83,13 +83,17 @@
             </div>
         </div>
 
+
+
+ 
         <div class="newsletter_address_talktous">
             <div class="formulario2">
-                <form action="">
+                <form name="frmContato" method="POST" id="frmContato" method="POST" action="{{url('enviaLetter')}}" >
+                    {{ csrf_field() }}
                     <div class="campos">
                         <h1>Newsletter</h1>
                         <label>Digite seu email para receber novidades:</label>
-                        <input type="email" name="emailRemetente" placeholder="Digite seu endereço de e-mail aqui" required>
+                        <input type="email" name="letterRemetente" placeholder="Digite seu endereço de e-mail aqui" required>
                         <input type="submit" name="enviarNewsletter" value="Enviar" id="btEnviaForm">
                     </div>  
                 </form>
