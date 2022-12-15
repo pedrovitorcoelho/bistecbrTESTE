@@ -19,19 +19,6 @@
     <div class="produto-texto">
         <h1>Bistec MSP</h1>
         <p>
-<<<<<<< HEAD
-            Quando se trata de atendimento técnico para a sua empresa atualmente existem dois modelos, o break-fix (quebrou-consertou) e o MSP (Provedores de Serviços Gerenciados).
-        </p>
-        <p>
-            No modelo break-fix o suporte técnico é acionado após o problema acontecer e até que ele seja resolvido você fica com seu equipamento/sistema inoperante.
-        </p>
-
-        <p>
-            Já no modelo MSP, a Bistec atua ativamente, utilizando ferramentas gerenciais, para analisar em tempo real o que está a acontecer com o seu computador e sistemas. Dessa forma é possível resolver os seus problemas antes mesmo de eles acontecerem.
-=======
-        Como provedor de serviços gerenciados, a Bistec analisa em tempo real o que está acontecendo com seu computador e sistemas, atuando antes mesmo que as falhas aconteçam.
-        </p>
-        <p>
             Controle (Bloqueio de sites, redes sociais, pendrives e outros dispositivos de armazenamento externo)
         </p>
 
@@ -45,7 +32,6 @@
 
         <p>
             * Atende a lei geral de proteção de dados - LGPD
->>>>>>> gui-laravel1
         </p>
 
         <p>

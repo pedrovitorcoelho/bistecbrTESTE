@@ -19,37 +19,6 @@
     <div class="produto-texto">
         <h1>Bistec Renting</h1>
         <p>
-<<<<<<< HEAD
-            Mantenha a sua liquidez adquirindo os sistemas de gestão e TI através da locação de equipamentos.
-        </p>
-        <p>
-            Esta solução permite que preserve as suas linhas de crédito junto aos bancos e assim faça um investimento rentável durante o ciclo de vida dos seus equipamentos, melhorando a sua classificação de crédito.
-        </p>
-        <p>
-            Tenha acesso a tecnologia de ponta e, quando o contrato acabar, faça upgrade dos seus equipamentos.
-        </p>
-        
-        <p>
-            <h4>
-                Benefícios de trabalhar com o Bistec Renting:
-            </h4>
-    <br>
-            <ul>
-                <li>- Não descapitaliza a empresa</li>
-                <li>- Incentivos fiscais </li>
-                <li>- Parcelas Fixas </li>
-                <li>- Equipamentos sempre Atualizados</li>
-                <li>- Maior Eficiência em TI</li>
-                <li>- Locação 100% sem entrada</li>
-            </ul>
-     <!--
-        <p>
-            <a class="nice_button" target="_blank" href="https://api.whatsapp.com/send?phone=5513992101945">ENTRE EM CONTACTO</a>
-        </p>  --> 
-=======
-            Faça a locação de equipamentos e tenha em sua empresa as tecnologias mais recentes, de maneira rápida e barata.
-        </p>
-        <p>
             Custos (Pequenas mensalidades em vez de grandes investimentos)
         </p>
         <p>
@@ -61,7 +30,6 @@
         <p>
             Ainda restam dúvidas sobre qual solução adquirir? <a class="link_msp" target="_blank" href="https://api.whatsapp.com/send?phone=5513992101945">Converse com um de nossos atendentes sobre a solução BISTEC Renting</a>
         </p>
->>>>>>> gui-laravel1
     </div>
     </article>
 @stop

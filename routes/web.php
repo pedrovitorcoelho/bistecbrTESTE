@@ -83,7 +83,18 @@ Route::get('/portfolio', function () {
     return view('portfolio');
 });
 
+Route::get('/emailSucesso', function () {
+    return view('emailSucesso');
+});
+
 Route::post('/enviaContato','App\Http\Controllers\ControllerContato@enviaMsg');
+
+
+Route::get('/enviaLetter', function () {
+    return view('enviaLetter');
+});
+
+Route::post('/enviaLetter','App\Http\Controllers\ControllerLetter@enviaLetter');
 
 Route::post('/email', function (Request $request) {
     dd($request->all());
