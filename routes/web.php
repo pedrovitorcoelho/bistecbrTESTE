@@ -97,6 +97,9 @@ Route::post('/email', function (Request $request) {
     dd($request->all());
 });
 
+Route::get('/portfolio', function () {
+    return view('portfolio');
+});
 
 Route::get('/tour', function () {
     return view('tour');

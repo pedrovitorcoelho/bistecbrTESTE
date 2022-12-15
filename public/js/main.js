@@ -40,26 +40,4 @@ function menuResponsive(){
     }else{
         menu.style.display = 'inherit'
     }
-<<<<<<< HEAD
 }
-=======
-}
-
-// abrir e fechar botão portfólio
-// document.getElementsByClassName('click_portfolio_mobile')[0].addEventListener('click', portfolioMobile)
-// function portfolioMobile(){
-//         let clickportfolio = document.getElementsByClassName('normal-submenu')[0]
-//         let store = document.getElementsByClassName('button')[0]
-//         let support = document.getElementsByClassName('button_support')[0]
-//         if(clickportfolio.style.display == 'block'){
-//             clickportfolio.style.display = 'none';
-//             store.style.display = 'block';
-//             support.style.display = 'block';
-//         }else{
-//             clickportfolio.style.display = 'block';
-//             store.style.display = 'none';
-//             support.style.display = 'none';
-//         }
-//         // console.log('teste');
-// }
->>>>>>> origin/gui-laravel1
