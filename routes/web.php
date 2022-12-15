@@ -79,6 +79,10 @@ Route::get('/contato', function () {
     return view('contato');
 });
 
+Route::get('/portfolio', function () {
+    return view('portfolio');
+});
+
 Route::post('/enviaContato','App\Http\Controllers\ControllerContato@enviaMsg');
 
 Route::post('/email', function (Request $request) {
@@ -149,8 +153,4 @@ Route::get('/produtos/wifi', function () {
 
 Route::get('/produtos/xml', function () {
     return view('produtos/xml');
-});
-
-Route::get('/produtos/hostfiber', function () {
-    return view('produtos/hostfiber');
 });

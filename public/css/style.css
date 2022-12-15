@@ -23,15 +23,13 @@ header {
     width: 100%;
     display: flex;
     position: fixed;
-    padding: 2px 100px;
     display: flex;
-    z-index: 1;
+    z-index: 2;
 }
 
 .logo-bistec img {
     width: 16vw;
     height: auto;
-    margin-bottom: 1vh;
     aspect-ratio: attr(width) / attr(height);
 }
 /* trocando imagens logo - dark mode*/
@@ -62,7 +60,7 @@ header .normal-menu li a {
 
 .normal-submenu li a {
     width: 200px;
-    padding: 8.5px;
+    padding: 9px;
     color: #141414;
     background: #F3FAFA;
     text-decoration: none;
@@ -127,7 +125,7 @@ header ul :hover > ul{
 	display: inline-flex;
 	align-items: center;
 	padding: 0 10px;
-	color: #FFEF6C;
+	color: #FFEF8F;
     height: 100%;
 }
 
@@ -163,7 +161,7 @@ a {
     position: absolute;
     left: 50%;
     width: 0%;
-    height: 2.5px;
+    height: 4.5px;
     background-color: #141414;
     transition: 0.2s;
 } 
@@ -215,7 +213,8 @@ a {
     width: auto;
     margin: auto;
     position: relative;
-    border-bottom: 2px solid #141414;
+    border-bottom: 5px solid #07305f;
+    z-index: 1;
 }
 
 .banner-bistec img{
@@ -250,15 +249,77 @@ a {
     font-size: 3.7vw;
 }
 
+/*BISTEC APRESENTAÇÃO */
+
+.bistec_presentation {
+    background-color: #dcecfe;
+    padding: 8vh 1vh;
+    transform: skew(0deg, -2.5deg) translateY(-40px);
+    z-index: 0;
+    position: relative;
+    border-bottom: 5px solid #262525;
+}
+
+.container {
+    transform: skew(0deg, 2.5deg);
+    max-width: 65%;
+    padding-bottom: 6vh;
+    z-index: -2;
+}
+
+.text_presentation {
+    padding: 1.8em;
+    background-color: #F3FAFA;
+    border-radius: 0.4em;
+    box-shadow: 0 5px 25px rgba(0,0,0,.1);
+    overflow: hidden;
+}
+
+.text_presentation:nth-child(1){
+    margin-top: 4em;
+}
+
+.text_presentation h1 {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.text_presentation h2 {
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.text_presentation p {
+    padding-top: 1em;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+.section_button_presentation {
+    transform: skew(0deg, 2.5deg);
+    display: flex;
+}
+
+.button_presentation {
+    background: linear-gradient(135deg, #07305f, #042244);
+    color: #fff;
+    font-weight: 600;
+    padding: 1em;
+    border-radius: 0.4em;
+    align-items: center;
+    z-index: 1;
+}
 /*---PRODUTOS------------------------------------*/
 .bistec-produtos{
-    padding: 5vw 2.5vw 2.5vw 2.5vw;
+    padding: 0.5vw;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     justify-content: center;
     max-width: 90%;
+    margin-top: -10px;
 }
+
 .bistec-produtos img{
     aspect-ratio: attr(width) / attr(height);
     width: auto;
@@ -308,72 +369,32 @@ a {
     font-weight: 400;
 }
 
-.bt-dialog{
-	background-color: #141414;
-    margin: 1vw 0vw 0vw 0vw;
+/*section tour */
+
+.bistec_tour {
+    background-color: #F3FAFA;
+    margin: auto;
+    padding: 5em 10em;
+    display: flex;
+}
+
+.bistec_button_tour {
+    margin: auto;
     align-items: center;
-    padding: 0 10px;
+    background: linear-gradient(135deg, #07305f, #042244);
+    padding: 1em;
     color: #fff;
-    height: 30px;
-    border-radius: 6px;
-    font-weight: 800;
-    position: relative;
-    min-width: 200px;
-    cursor: pointer;
-    transition: color 0.4s linear;
+    font-weight: 600;
+    border-radius: 0.4em;
 }
 
-.bt-dialog:hover {
-    color: #fff;
-    background: none;
+.bistec_button_tour:hover, .bistec_button_tour:focus-within, .button_presentation:hover, .button_presentation:focus-within {
+    background: linear-gradient(135deg, #10588c, #042244);
 }
 
-.bt-dialog::before{
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #13549E;
-    border-radius: 6px;
-    transform: scaleY(0);
-    z-index: -1;
-    transition: transform 0.8s;
-    transform-origin: 0 0;
-    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+.bistec_button_tour:active, .button_presentation:active {
+    background: linear-gradient(135deg, #186094, #073161);
 }
-.bt-dialog:hover::before{
-    transform: scaleY(1);
-    border-radius: 6px;
-}
-
-.bt-dialog:active{
-	background-color: #2e2d2d;
-}
-
-.bt-dialog:focus-within {
-    background-color: #13549E;
-    transition: 1s;
-}
-
-.bt-dialog .button_text,
-.bt-dialog ion-icon {
-	color: rgb(255, 255, 255);
-    font-size: 1.6vw;
-}
-
-.bt-dialog .button_text:hover{
-    color: #fff;
-}
-
-dialog span {
-    background-color: #10498a;
-    color: #F3FAFA;
-    width: 100%;
-    padding: 10px;
-}
-
 /*--RODAPÉ---------------------------------------------*/
 footer{
     background-color: #262525;

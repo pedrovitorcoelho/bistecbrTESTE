@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 @extends('template')
+=======
+@extends('layouts.template')
+>>>>>>> gui-laravel1
 
 @section('style')
     <link rel="stylesheet" href="/css/styleContato.css">
@@ -47,7 +51,7 @@
                 
     
                 <div class="campos">
-                    <input type="submit" name="enviarEmail" value="Enviar" id="btEnviaForm">
+                    <input type="submit" name="enviarEmail" value="Enviar" id="btEnviaForm1">
                 </div>
                 
             </form>
@@ -58,8 +62,7 @@
                 <div class="campos">
                             <h1>Endereço</h1>
                             <p>Rua Amador Bueno, 333, Sala 501 - Centro – Santos, SP</p>
-                            <p>CEP 11013-153</p>
-                            <p><em>Estacionamento no local com acesso à recepção</em></p>
+                            <p>CEP 11013-153 - <em>Estacionamento no local com acesso à recepção</em></p>
                 </div> 
             </div>
         </div>
@@ -80,10 +83,14 @@
                         <h1>Newsletter</h1>
                         <label>Digite seu email para receber novidades:</label>
                         <input type="email" name="emailRemetente" placeholder="Digite seu endereço de e-mail aqui" required>
-                        <input type="submit" name="enviarNewsletter" value="Enviar" id="btEnviaForm">
+                        <input type="submit" name="enviarNewsletter" value="Enviar" id="btEnviaForm2">
                     </div>  
                 </form>
             </div>
         </div>
     </article>
+@stop
+
+@section('script')
+    <script src="/js/menu.js" defer async></script>
 @stop

@@ -1,4 +1,4 @@
-@extends('template')
+@extends('layouts.template')
 
 @section('style')
     <link rel="stylesheet" href="/css/styleProdutos.css">
@@ -31,4 +31,8 @@
             </p>
         </div>
     </article>
+@stop
+
+@section('script')
+    <script src="/js/menu.js" defer async></script>
 @stop

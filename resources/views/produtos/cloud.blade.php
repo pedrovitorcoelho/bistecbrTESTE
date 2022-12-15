@@ -1,4 +1,4 @@
-@extends('template')
+@extends('layouts.template')
 
 @section('style')
     <link rel="stylesheet" href="/css/styleProdutos.css">
@@ -20,13 +20,21 @@
         <div class="produto-texto">
             <h1>Bistec Cloud</h1>
             <p>
-                As informações corporativas estão cada vez mais digitalizadas e online, por isso as empresas devem prevenir-se contra a perda de informações importantes.
+                Guarde os seus arquivos com segurança. Nenhum sistema é 100% seguro, faça BACKUP.
             </p>
             <p>
-                Esta solução ajuda-o a proteger os arquivos que a sua empresa precisa e restaura-osrapidamente após uma falha do sistema ou perda de dados.
+                Backup (cópia dos arquivos realizada de forma automática, sem custos de investimentos em infraestrutura).
             </p>
             <p>
-                O Bistec Cloud é a solução ideal de backup em nuvem, seguro e elástico, sem custos de investimentos em infraestrutura e de acordo com o Regulamento Geral de Proteção de Dados (RGPD).
+                Segurança (Garante a disponibilidade, confidencialidade e integridade dos seus arquivos).
+            </p>
+
+            <p>
+                Elasticidade (Contrate mais espaço de armazenamento sempre que for necessário).
+            </p>
+
+            <p>
+                * Atende à lei geral de proteção de dados - LGPD
             </p>
 
             <p>
@@ -34,4 +42,8 @@
             </p>
         </div>
     </article>
+@stop
+
+@section('script')
+    <script src="/js/menu.js" defer async></script>
 @stop

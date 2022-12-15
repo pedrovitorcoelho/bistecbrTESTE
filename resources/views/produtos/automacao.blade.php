@@ -1,4 +1,4 @@
-@extends('template')
+@extends('layouts.template')
 
 @section('style')
     <link rel="stylesheet" href="/css/styleProdutos.css">
@@ -9,7 +9,7 @@
 <article id="first_section">
         <!-- banner -->
         <section class="banner-bistec">
-            <img src="https://ik.imagekit.io/bistecbr/produtos/bistec-automacao-intro.jpg" alt="Imagem de fundo do produto Bistec Automação">
+            <img id="bannerAutomacao" src="https://ik.imagekit.io/bistecbr/produtos/bistec-automacao-intro.jpg" alt="Imagem de fundo do produto Bistec Automação">
             <!--<div class="banner-bistec-texto">
                 <h1>Bistec Portugal</h1>
                 <h2>Serviços em tecnologia para todas as empresas</h2>
@@ -17,18 +17,26 @@
         </section>
 
     <!-- texto produto -->
-        <div class="produto-texto">
+    <div class="produto-texto">
             <h1>Bistec Automação</h1>
             <p>
-                A Bistec, consolidada no mercado de tecnologia para o comércio e serviços, oferece o kit completo para montar o seu PDV e automatizar as suas vendas.
+                Softwares (sistemas para todos os segmentos, como restaurantes, materiais de construção, vestuário, calçados, dentre outros). 
+
             </p>
             <p>
-                Facilite a sua gestão e as transações com os seus clientes e esteja em dia com a legislação fiscal. Os kits podem conter terminais de venda (teclados inteligentes), leitores de código de barras, relógios de pontos digitais, computadores, etc. Temos também softwares para a automação comercial da sua empresa.
+                Hardwares (Equipamentos como computadores, impressoras térmicas, balanças, leitores de código de barras, etiquetas eletrônicas, relógio de ponto, terminais de auto-atendimento e muito mais)
             </p>
 
             <p>
-                Elimine falhas de controle operacional com os relógios de pontos digitais. Com o modelo móvel o controle de ponto dos funcionários pode ser realizado onde eles estiverem.
+                Serviços – (Suporte realizado por consultores técnicos capacitados 
+            </p>
+            <p>
+                Ainda restam dúvidas sobre qual solução adquirir? <a class="link_msp" target="_blank" href="https://api.whatsapp.com/send?phone=5513992101945">Converse com um de nossos atendentes sobre a solução BISTEC Automação</a>
             </p>
         </div>
     </article>
+@stop
+
+@section('script')
+    <script src="/js/menu.js" defer async></script>
 @stop

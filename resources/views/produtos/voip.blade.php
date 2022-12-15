@@ -1,4 +1,4 @@
-@extends('template')
+@extends('layouts.template')
 
 @section('style')
     <link rel="stylesheet" href="/css/styleProdutos.css">
@@ -19,19 +19,27 @@
     <div class="produto-texto">
         <h1>Bistec Voip</h1>
         <p>
-            Quando se trata de atendimento técnico para a sua empresa atualmente existem dois modelos, o break-fix (quebrou-consertou) e o MSP (Provedores de Serviços Gerenciados).
+            Conte com um sistema de telefonia em nuvem que vai além da comunicação por voz
         </p>
         <p>
-            No modelo break-fix o suporte técnico é acionado após o problema acontecer e até que ele seja resolvido você fica com seu equipamento/sistema inoperante.
-        </p>
-
-        <p>
-            Já no modelo MSP, a Bistec atua ativamente, utilizando ferramentas gerenciais, para analisar em tempo real o que está a acontecer com o seu computador e sistemas. Dessa forma é possível resolver os seus problemas antes mesmo de eles acontecerem.
+            Mobilidade (Receba e realize chamadas de qualquer lugar, por meio de telefones IP ou aplicativos para computadores e smartphones, basta ter conexão à internet)
         </p>
 
         <p>
-            Ainda restam dúvidas sobre qual solução adquirir? <a class="link_msp" target="_blank" href="https://api.whatsapp.com/send?phone=5513992101945&text=Ol%C3%A1,%20estou%20com%20uma%20d%C3%BAvida%20sobre%20a%20solu%C3%A7%C3%A3o%20Bistec%20MSP">Converse com um de nossos atendentes sobre a solução BISTEC MSP</a>
+            Comunicação (Chamadas de voz, reuniões por vídeo e mensagens de texto)
+        </p>
+
+        <p>
+            Gerenciamento (Além da emissão de relatórios das ligações recebidas e efetuadas, é possível realizar a gravação, configurar ramais, músicas de espera, atendente virtual e muitas outras funcionalidades)
+        </p>
+
+        <p>
+            Ainda restam dúvidas sobre qual solução adquirir? <a class="link_msp" target="_blank" href="https://api.whatsapp.com/send?phone=5513992101945">Converse com um de nossos atendentes sobre a solução BISTEC Voip</a>
         </p>
     </div>
 </article>
+@stop
+
+@section('script')
+    <script src="/js/menu.js" defer async></script>
 @stop

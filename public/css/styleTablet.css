@@ -1,10 +1,14 @@
 
 /* tablet */
-@media (min-width: 621px) and (max-width:950px){
+@media (min-width: 621px) and (max-width:768px){
     .header-bistec {
         width: 100%;
         display: block;
         padding: 10px 0;
+    }
+    
+    .logo-bistec img {
+        margin-left: 20px;
     }
 
     header .normal-menu li a{
@@ -16,7 +20,7 @@
 
     .normal-menu{
         text-align: center;
-        background-color: #F3FAFA;
+        background-color: #f3fafa;
         display: none;
         position: absolute;
         width: 100%;
@@ -46,6 +50,10 @@
         margin-right: 5px;
     }
 
+    #img-banner {
+        margin-top: 60px;
+    }
+
     /* 
      */
 
@@ -58,6 +66,7 @@
         display: block;
         float: right;
         margin-right: 20px;
+        color: #fff;
     }
     .menu-cell li ion-icon {
         color: #141414;
@@ -82,17 +91,22 @@
 
     header .normal-submenu li a {
         width: 100%;
-    padding: 10px 20px;
-    font-size: 12px;
-    box-shadow: none;
-    text-align: left;
+        padding: 10px 20px;
+        font-size: 12px;
+        box-shadow: none;
+        text-align: left;
     }
 
     .button {
-        display: none;
+        width: 100%;
+        display: block;
+        height: 45px;
+        font-size: 16px;
+        border-radius: 0;
+        background: #0F5A20;
     }
 
-    .support_icon {
+    .support_icon, .store_icon {
         background: none;
         padding: 5px 0;
         padding-left: 20px;
@@ -112,15 +126,18 @@
       background: #141414;
     }
 
+    /*apresentação*/
+    .container{ 
+        max-width: 80%;
+    }
+
     /* produtos */
 
     .bistec-produtos {
         flex-direction: column;
-        margin-top: 5em;
-    }
-
-    .bistec-produtos img {
-      width: 55%;
+        max-width: 90%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .texto-produtos {
@@ -139,21 +156,8 @@
         font-size: 3.2vw;
         font-weight: 400;
     }
-    
-    .bt-dialog {
-        margin: auto;
-        margin-top: 2vh;
-    }
-    
-    .bt-dialog .button_text {
-        font-size: 25px;
-    }
 
     /* rodapé */
-
-    footer {
-        margin-top: 4vh;
-    }
 
     .redes-sociais {
         max-width: 85%;
@@ -168,5 +172,20 @@
         max-width: 75%;
         grid-template-columns: repeat(1, 2fr);
         font-size: 24px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        .normal-menu{
+            text-align: center;
+            background-color: #141414;
+        }
+
+        .menu-cell li ion-icon {
+            color: #f3fafa;
+        }
+
+        .normal:hover {
+            color: #f3fafa;
+        }
     }
 }

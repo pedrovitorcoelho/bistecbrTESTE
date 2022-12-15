@@ -57,7 +57,7 @@
     .logo-bistec img {
         margin: 0; 
         width: 32vw;
-        margin-left: 5px;
+        margin-left: 15px;
     }
     
 
@@ -75,17 +75,37 @@
     }
     .normal {
         padding-left: 20px;
+        background: none;
     }
 
     .normal-submenu{
         /* width: 100%; */
-        display: block;
+        display: none;
         border: none;
         width: 100%;
         top: 30px;
         /* margin: 0;
         padding: 0; */
     }
+
+    header ul :hover > ul{
+        display: none;
+    }
+
+    :focus-within > .normal-submenu {
+        display: none;
+    }
+
+    /* .click_portfolio_mobile:active > .normal-submenu {
+        display: block;
+        transition: 0.5s;
+    }*/
+
+    .click_portfolio_mobile:active > .button_store,
+    .click_portfolio_mobile:active > .button_support {
+        display: none;
+        transition: 0.5s;
+    } 
 
     header .normal-submenu li a {
         width: 100%;
@@ -95,11 +115,11 @@
     text-align: left;
     }
 
-    .button {
+    /* .button {
         display: none;
-    }
+    } */
 
-    .support_icon {
+    .button_icon {
         background: none;
         padding: 5px 0;
         padding-left: 20px;
@@ -107,7 +127,6 @@
 
     .button_support {
         width: 100%;
-        margin-top: 340px;
         display: block;
         height: 45px;
         font-size: 16px;
@@ -115,7 +134,17 @@
         background: #0c407c;
     }
 
-    .button_support:hover {
+    .button {
+        width: 100%;
+        display: block;
+        height: 45px;
+        font-size: 16px;
+        border-radius: 0;
+        background: #0F5A20;
+    }
+
+    .button_support:hover, .button_support:hover > .support_icon,
+    .button:hover, .button:hover > .store_icon {
       background: #141414;
     }
 
@@ -123,13 +152,18 @@
     /* banner */
 
    /*PROVISÓRIO PARA CORREÇÃO DE DUPLICIDADE DE IMAGENS NAS OUTRAS PÁGINAS*/
-    .banner-bistec {
+    /* .banner-bistec {
         display: none;
-    }
-    /*para ignorar a index, provisório tbm*/
+    } */
+    /* para ignorar a index, provisório tbm */
     #imagemUnica{
         display: block;
+    } 
+
+    .banner-bistec img {
+        margin-top: 63px;
     }
+
     .banner-bistec-mobile {
         display: block;
         width: auto;
@@ -140,7 +174,7 @@
     .banner-bistec-mobile img{
         width: 100%;
         height: 85vh;
-        margin-top: 75px;
+        margin-top: 71px;
     }
 
     .banner-bistec-texto {    
@@ -149,12 +183,21 @@
         width: 90%;
     }  
     .banner-bistec-texto h1 {
-        font-size: 9.6vw;
+        font-size: 7.6vw;
     }
     .banner-bistec-texto h2 {
-        font-size: 6.3vw;
+        font-size: 5.3vw;
     }
 
+    /* parte apresentação */
+
+    .bistec_presentation .container {
+        max-width: 95%;
+    }
+
+    .bistec_presentation {
+        padding-top: 15px;
+    }
     /* produtos */
 
     .bistec-produtos {
@@ -162,6 +205,10 @@
         text-align: center;
         max-width: 100%;
         padding: 0;
+    }
+
+    .bistec-produtos a img {
+        margin: auto;
     }
 
     .bistec-produtos img {
@@ -188,24 +235,15 @@
         font-size: 4.2vw;
         font-weight: 400;
     }
-    
-    .bt-dialog {
-        padding: 10px 10px;
-        margin: auto;
-        margin-top: 2vh;
-        height: auto;
+
+    /*tour*/
+
+    .bistec_tour {
+        padding: 4em;
         text-align: center;
     }
     
-    .bt-dialog .button_text {
-        font-size: 3vh;
-    }
-
     /* rodapé */
-
-    footer {
-        margin-top: 1em;
-    }
 
     .redes-sociais {
         display: grid;

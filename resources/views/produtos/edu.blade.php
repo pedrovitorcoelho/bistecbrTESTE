@@ -1,4 +1,4 @@
-@extends('template')
+@extends('layouts.template')
 
 @section('style')
     <link rel="stylesheet" href="/css/styleProdutos.css">
@@ -20,23 +20,23 @@
         <div class="produto-texto">
             <h1>Bistec Edu</h1>
             <p>
-                Constantemente, a implementação de um software de gestão acaba por falhar, porque não é dada a atenção necessária ao profissional que utilizará a ferramenta no dia-a-dia. Para evitar este tipo de situação, o Bistec Edu fornece formação para toda a sua equipa explorar 100% da capacidade das soluções adquiridas.
+                Faça o treinamento com toda a sua equipe e explore 100% da capacidade das soluções Bistec.
             </p>
 
             <p>
-                Muitas vezes a implantação de um software de gestão fracassa porque não é dada a atenção necessária ao profissional que irá, de facto, fazer uso da ferramenta no dia a dia: o utilizador.
+                Temas (treinamentos em informática e de desenvolvimento profissional e gerencial).
             </p>
 
             <p>
-                Por isso, um dos aspetos mais importantes é a questão  da formação. Quando o utilizador não recebe formação adequada não faz um bom uso da ferramenta e sente-se frustrado. Como resultado, ele pode passar a evitar o uso do software, voltando a executar tarefas da maneira como fazia antes da implementação.
+                Modalidades (Treinamentos presenciais no nosso Showroom ou na sua empresa e Treinamentos a distância, utilizando a plataforma Bistec Edu).
             </p>
 
             <p>
-                O ideal é que o utilizador receba formação constante (ou por um período maior), de forma personalizada, que lhe permita aprender a utilizar todos os recursos do software de gestão da melhor maneira possível. Este comprometimento com o utilizador gera resultados extremamente benéficos para a empresa, principalmente quanto à valorização do investimento realizado.
+                Formadores (Equipe de consultores técnicos. Contamos ainda com profissionais com mais de 25 anos de experiência acadêmica).
             </p>
 
             <p>
-                Temos profissionais com mais de 25 anos de experiência académica. Formadores com CCP (Certificado de Competências Pedagógicas), e-Formadores e educadores certificados Google nível 1.
+                Ainda restam dúvidas sobre qual solução adquirir? <a class="link_msp" target="_blank" href="https://api.whatsapp.com/send?phone=5513992101945">Converse com um de nossos atendentes sobre a solução BISTEC Edu</a>
             </p>
 
             <h2>
@@ -45,10 +45,14 @@
 
             <div class="bistec-edu-plataformas">
                 <a href="https://edu.bistec.com.br/ead/login/index.php" target="_blank"><img src="https://ik.imagekit.io/bistecbr/img-lg-bistec-edu.png" alt="Bistec Edu"></a>
-                <a href="https://edu.bistec.com.br/ead/login/index.php" target="_blank"><img src="https://ik.imagekit.io/bistecpt/imagens/img-lg-bistec-edu-branco.png" alt="Bistec Edu"></a>
+                <a href="https://edu.bistec.com.br/ead/login/index.php" target="_blank"><img src="https://ik.imagekit.io/bistecbr/img-lg-bistec-edu-branco.png" alt="Bistec Edu"></a>
                 <a href="https://www.youtube.com/c/BISTECEDU" target="_blank"><img src="https://ik.imagekit.io/bistecbr/youtube.png" alt="Canal do YouTube da Bistec Edu"></a>
                 <a href="https://www.youtube.com/c/BISTECEDU" target="_blank"><img src="https://ik.imagekit.io/bistecbr/youtube_white.png" alt="Canal do YouTube da Bistec Edu"></a>
             </div>
         </div>
     </article>
+@stop
+
+@section('script')
+    <script src="/js/menu.js" defer async></script>
 @stop

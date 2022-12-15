@@ -1,4 +1,4 @@
-@extends('template')
+@extends('layouts.template')
 
 @section('style')
     <link rel="stylesheet" href="/css/styleProdutos.css">
@@ -20,15 +20,32 @@
         <div class="produto-texto">
             <h1>Bistec Wifi</h1>
             <p>
-                A Bistec, consolidada no mercado de tecnologia para o comércio e serviços, oferece o kit completo para montar o seu PDV e automatizar as suas vendas.
+                Transforme seu Wifi em uma ferramenta completa de marketing de relacionamento.
             </p>
+            
             <p>
-                Facilite a sua gestão e as transações com os seus clientes e esteja em dia com a legislação fiscal. Os kits podem conter terminais de venda (teclados inteligentes), leitores de código de barras, relógios de pontos digitais, computadores, etc. Temos também softwares para a automação comercial da sua empresa.
+                Acesso (Disponibilize a conexão por meio das redes sociais ou e-mail e senha e tenha o controle de quem está acessando sua internet)
             </p>
 
             <p>
-                Elimine falhas de controle operacional com os relógios de pontos digitais. Com o modelo móvel o controle de ponto dos funcionários pode ser realizado onde eles estiverem.
+                Segurança (disponibilize Wifi para o seu cliente isolado do Wifi de uso corporativo, garantindo segurança para seus arquivos)
+            </p>
+
+            <p>
+                Marketing (Fidelize seus clientes com mensagens de aniversário e promocionais por meio de SMS e WhatsApp)
+            </p>
+            
+            <p>
+                * Atende ao Marco Civíl da Internet e a Lei Geral de Proteção de Dados - LGPD
+            </p>
+
+            <p>
+                Ainda restam dúvidas sobre qual solução adquirir? <a class="link_msp" target="_blank" href="https://api.whatsapp.com/send?phone=5513992101945">Converse com um de nossos atendentes sobre a solução BISTEC Wifi</a>
             </p>
         </div>
     </article>
+@stop
+
+@section('script')
+    <script src="/js/menu.js" defer async></script>
 @stop
